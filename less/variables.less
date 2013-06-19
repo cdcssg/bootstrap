@@ -20,10 +20,10 @@
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
+@blue:                  rgb(65,165,207);
 @blueDark:              #0064cd;
 @green:                 #46a546;
-@red:                   #9d261d;
+@red:                   rgb(161,57,59);
 @yellow:                #ffc40d;
 @orange:                #f89406;
 @pink:                  #c3325f;
@@ -38,13 +38,13 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @blue;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        "Transport New Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
@@ -181,16 +181,16 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
-@navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarBackgroundHighlight:       @grayLighter;
+@navbarBackground:                #ffffff;
+@navbarBorder:                    @grayLighter;
 
 @navbarText:                      #777;
 @navbarLinkColor:                 #777;
 @navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
+@navbarLinkColorActive:           @white;
 @navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+@navbarLinkBackgroundActive:      @blue;
 
 @navbarBrandColor:                @navbarLinkColor;
 
